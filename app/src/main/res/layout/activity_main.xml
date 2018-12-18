@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/ConsultMenu"
+        android:text="Consulter le menu"
+        android:onClick="onConsultMenuClicked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/LoginButton"
+        android:text="Se connecter"
+        android:onClick="onLoginButtonClicked"
+        app:layout_constraintTop_toBottomOf="@id/ConsultMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/RegisterButton"
+        android:text="S'enregistrer"
+        android:onClick="onRegisterButtonClicked"
+        app:layout_constraintTop_toBottomOf="@id/LoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

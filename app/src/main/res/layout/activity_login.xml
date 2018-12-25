@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/inputTextUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/outputTextViewUserName"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/inputTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/outPutTextViewPassword"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/outPutTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Se Connecter"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="150dp" />
+
+    <TextView
+        android:id="@+id/outputTextViewUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Courriel ou nom utilisateur"
+        app:layout_constraintTop_toBottomOf="@+id/outPutTextTitle"
+        tools:layout_editor_absoluteX="110dp" />
+
+    <TextView
+        android:id="@+id/outPutTextViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Connexion"
+        app:layout_constraintTop_toBottomOf="@+id/inputTextPassword"
+        tools:layout_editor_absoluteX="141dp" />
+
+    <TextView
+        android:id="@+id/outputTextViewRegister"
+        android:onClick="onResisterTextClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Vous n'avez pas de compte, cliquez ici!"
+        app:layout_constraintTop_toBottomOf="@+id/connectButton"
+        tools:layout_editor_absoluteX="91dp" />
+
+</android.support.constraint.ConstraintLayout>

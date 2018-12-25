@@ -1,4 +1,20 @@
 package universconception.conception.cegepstefoy.restaurantconcept.Activity;
 
-public class LoginActivity {
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+
+import universconception.conception.cegepstefoy.restaurantconcept.R;
+
+public class LoginActivity extends AppCompatActivity {
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
+    }
+
+    public void onResisterTextClick(View view) {
+    }
 }

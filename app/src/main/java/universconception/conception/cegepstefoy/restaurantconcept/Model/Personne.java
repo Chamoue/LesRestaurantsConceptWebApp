@@ -1,11 +1,20 @@
 package universconception.conception.cegepstefoy.restaurantconcept.Model;
 
-public class Personne {
-    private String prenom;
-    private String nom;
-    private Courriel courriel;
-    private Password password;
+import android.arch.persistence.room.ColumnInfo;
 
+public class Personne {
+
+    @ColumnInfo(name = "prenom")
+    private String prenom;
+
+    @ColumnInfo(name = "nom")
+    private String nom;
+
+    @ColumnInfo(name = "courriel")
+    private Courriel courriel;
+
+    @ColumnInfo(name = "password")
+    private Password password;
 
     protected Personne(String prenom, String nom, Courriel courriel, Password password) {
         this.prenom = prenom;

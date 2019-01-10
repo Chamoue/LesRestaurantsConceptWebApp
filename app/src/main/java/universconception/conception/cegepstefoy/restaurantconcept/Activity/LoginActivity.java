@@ -1,13 +1,13 @@
 package universconception.conception.cegepstefoy.restaurantconcept.Activity;
 
-import android.os.Bundle;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 
 import universconception.conception.cegepstefoy.restaurantconcept.R;
 
 public class LoginActivity extends AppCompatActivity {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,6 +15,8 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
     }
 
-    public void onResisterTextClick(View view) {
+    public void onRegisterTextClicked(View view) {
+        Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+        startActivity(intent);
     }
 }

@@ -6,6 +6,12 @@ public class CompteUsager {
     private Password password;
     private Courriel courriel;
 
+
+    public CompteUsager(Courriel courriel, Password password) {
+        this.password = password;
+        this.courriel = courriel;
+    }
+
     public Personne getPersonne() {
         return personne;
     }

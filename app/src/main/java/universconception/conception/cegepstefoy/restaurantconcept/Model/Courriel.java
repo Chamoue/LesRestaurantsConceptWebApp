@@ -2,9 +2,17 @@ package universconception.conception.cegepstefoy.restaurantconcept.Model;
 
 public class Courriel {
 
+    public Courriel(String courriel) {
+        this.courriel = courriel;
+    }
 
-    private int courrielId;
+    public String getCourriel() {
+        return courriel;
+    }
 
+    public void setCourriel(String courriel) {
+        this.courriel = courriel;
+    }
 
     private String courriel;
 }

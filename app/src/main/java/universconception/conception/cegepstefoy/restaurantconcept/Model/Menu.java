@@ -1,25 +1,14 @@
 package universconception.conception.cegepstefoy.restaurantconcept.Model;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Menu {
 
 
-    private int menuId;
-
-
     private List<Mets> menu;
 
-    public Menu(int menuId, List<Mets> menu) {
-        this.menuId = menuId;
-        this.menu = menu;
-    }
-
-    public int getMenuId() {
-        return menuId;
-    }
-
-    public void setMenuId(int menuId) {
-        this.menuId = menuId;
+    public Menu() {
+        this.menu = new ArrayList<>();
     }
 
     public List<Mets> getMenu() {

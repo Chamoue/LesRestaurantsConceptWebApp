@@ -1,15 +1,11 @@
 package universconception.conception.cegepstefoy.restaurantconcept.Model;
 
-import android.arch.persistence.room.ColumnInfo;
-import android.arch.persistence.room.PrimaryKey;
-
 public class Password {
 
-    @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name = "password_Id")
+
     private int passwordId;
 
-    @ColumnInfo(name = "password")
+
     private String password;
 
     public Password(String password) {

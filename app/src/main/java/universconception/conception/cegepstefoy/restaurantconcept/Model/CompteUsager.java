@@ -1,14 +1,32 @@
 package universconception.conception.cegepstefoy.restaurantconcept.Model;
 
-import android.arch.persistence.room.ColumnInfo;
-import android.arch.persistence.room.PrimaryKey;
-
 public class CompteUsager {
 
-    @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name = "compteUsager_Id")
-    private int compteUsagerId;
-
-    @ColumnInfo(name = "personne")
     private Personne personne;
+    private Password password;
+    private Courriel courriel;
+
+    public Personne getPersonne() {
+        return personne;
+    }
+
+    public void setPersonne(Personne personne) {
+        this.personne = personne;
+    }
+
+    public Password getPassword() {
+        return password;
+    }
+
+    public void setPassword(Password password) {
+        this.password = password;
+    }
+
+    public Courriel getCourriel() {
+        return courriel;
+    }
+
+    public void setCourriel(Courriel courriel) {
+        this.courriel = courriel;
+    }
 }

@@ -1,17 +1,12 @@
 package universconception.conception.cegepstefoy.restaurantconcept.Model;
-
-import android.arch.persistence.room.ColumnInfo;
-import android.arch.persistence.room.PrimaryKey;
-
 import java.util.List;
 
 public class Menu {
 
-    @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name = "menu_Id")
+
     private int menuId;
 
-    @ColumnInfo(name = "details_menu")
+
     private List<Mets> menu;
 
     public Menu(int menuId, List<Mets> menu) {
